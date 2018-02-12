@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B9578F6-6D10-4804-933B-AF68ABC80C5E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Army_Vechical_Entry</RootNamespace>
+    <AssemblyName>Army_Vechical_Entry</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>F:\Picqute Move Control System\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CF5A02213599727D3B91C7CA75BAFD46EEB5E05A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Army_Vechical_Entry_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Vehical_Types.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Vehical_Types.Designer.cs">
+      <DependentUpon>Add_Vehical_Types.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alone _Person_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alone _Person_Entry.Designer.cs">
+      <DependentUpon>Alone _Person_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alone_Person_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alone_Person_search.Designer.cs">
+      <DependentUpon>Alone_Person_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppSettings.cs" />
+    <Compile Include="Connection _String_from.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connection _String_from.Designer.cs">
+      <DependentUpon>Connection _String_from.cs</DependentUpon>
+    </Compile>
+    <Compile Include="global_user_id.cs" />
+    <Compile Include="Individual_report_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Individual_report_form.Designer.cs">
+      <DependentUpon>Individual_report_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location_setting_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location_setting_Form.Designer.cs">
+      <DependentUpon>Location_setting_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parent_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parent_Form.Designer.cs">
+      <DependentUpon>Parent_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passenger_Entry_Only.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passenger_Entry_Only.Designer.cs">
+      <DependentUpon>Passenger_Entry_Only.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recipet_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recipet_form.Designer.cs">
+      <DependentUpon>recipet_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_companion_trip_sheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_companion_trip_sheet.Designer.cs">
+      <DependentUpon>Report_companion_trip_sheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report_individual_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report_individual_search.Designer.cs">
+      <DependentUpon>report_individual_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_Trip_sheet_passenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_Trip_sheet_passenger.Designer.cs">
+      <DependentUpon>Report_Trip_sheet_passenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup_Form.Designer.cs">
+      <DependentUpon>Signup_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="Total_vouchers_on_LOC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Total_vouchers_on_LOC.Designer.cs">
+      <DependentUpon>Total_vouchers_on_LOC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TripSheet_Voc_datetime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TripSheet_Voc_datetime.Designer.cs">
+      <DependentUpon>TripSheet_Voc_datetime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TripSheet_Vou_OP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TripSheet_Vou_OP.Designer.cs">
+      <DependentUpon>TripSheet_Vou_OP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trip_sheet_passenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trip_sheet_passenger.Designer.cs">
+      <DependentUpon>Trip_sheet_passenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trip_sheet_Vehical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trip_sheet_Vehical.Designer.cs">
+      <DependentUpon>trip_sheet_Vehical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trip_Shee_ Of_Companion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trip_Shee_ Of_Companion.Designer.cs">
+      <DependentUpon>Trip_Shee_ Of_Companion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehical_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehical_Entry.Designer.cs">
+      <DependentUpon>Vehical_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehical_Entry_Only.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehical_Entry_Only.Designer.cs">
+      <DependentUpon>Vehical_Entry_Only.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehical_Entry_RecordDataSet.cs">
+      <DependentUpon>Vehical_Entry_RecordDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Vehical_Entry_RecordDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vehical_Entry_RecordDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vehical_Entry_RecordDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vehical_Entry_RecordDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vehical_Entry_RecordDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vehical_Entry_RecordDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vehical_Entry_RecordDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vehical_Entry_RecordDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vehical_Entry_RecordDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vehical_Entry_RecordDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vehical_Entry_RecordDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vehical_Entry_RecordDataSet6.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_Vehical_Types.resx">
+      <DependentUpon>Add_Vehical_Types.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alone _Person_Entry.resx">
+      <DependentUpon>Alone _Person_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alone_Person_search.resx">
+      <DependentUpon>Alone_Person_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connection _String_from.resx">
+      <DependentUpon>Connection _String_from.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="individual_receipt.rdlc" />
+    <EmbeddedResource Include="Individual_report_form.resx">
+      <DependentUpon>Individual_report_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location_setting_Form.resx">
+      <DependentUpon>Location_setting_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parent_Form.resx">
+      <DependentUpon>Parent_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passenger_Entry_Only.resx">
+      <DependentUpon>Passenger_Entry_Only.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="recipet_form.resx">
+      <DependentUpon>recipet_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportToken.rdlc" />
+    <EmbeddedResource Include="Report_companion_tripsheet.rdlc" />
+    <EmbeddedResource Include="Report_companion_trip_sheet.resx">
+      <DependentUpon>Report_companion_trip_sheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Individual_Search.rdlc" />
+    <EmbeddedResource Include="report_individual_search.resx">
+      <DependentUpon>report_individual_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Trip_sheet_passenger.rdlc" />
+    <EmbeddedResource Include="Report_Trip_sheet_passenger.resx">
+      <DependentUpon>Report_Trip_sheet_passenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup_Form.resx">
+      <DependentUpon>Signup_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Total_vouchers_on_LOC.resx">
+      <DependentUpon>Total_vouchers_on_LOC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TripSheet_Voc_datetime.resx">
+      <DependentUpon>TripSheet_Voc_datetime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TripSheet_Vou_OP.resx">
+      <DependentUpon>TripSheet_Vou_OP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trip_sheet_passenger.resx">
+      <DependentUpon>Trip_sheet_passenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trip_sheet_Vehical.resx">
+      <DependentUpon>trip_sheet_Vehical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trip_Shee_ Of_Companion.resx">
+      <DependentUpon>Trip_Shee_ Of_Companion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehical_Entry.resx">
+      <DependentUpon>Vehical_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehical_Entry_Only.resx">
+      <DependentUpon>Vehical_Entry_Only.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Army_Vechical_Entry_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\Receipt.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Vehical_Entry_RecordDataSet.xsc">
+      <DependentUpon>Vehical_Entry_RecordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vehical_Entry_RecordDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet.xss">
+      <DependentUpon>Vehical_Entry_RecordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet1.xsc">
+      <DependentUpon>Vehical_Entry_RecordDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vehical_Entry_RecordDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet1.xss">
+      <DependentUpon>Vehical_Entry_RecordDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet2.xsc">
+      <DependentUpon>Vehical_Entry_RecordDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vehical_Entry_RecordDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet2.xss">
+      <DependentUpon>Vehical_Entry_RecordDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet3.xsc">
+      <DependentUpon>Vehical_Entry_RecordDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vehical_Entry_RecordDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet3.xss">
+      <DependentUpon>Vehical_Entry_RecordDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet5.xsc">
+      <DependentUpon>Vehical_Entry_RecordDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vehical_Entry_RecordDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet5.xss">
+      <DependentUpon>Vehical_Entry_RecordDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet6.xsc">
+      <DependentUpon>Vehical_Entry_RecordDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vehical_Entry_RecordDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vehical_Entry_RecordDataSet6.xss">
+      <DependentUpon>Vehical_Entry_RecordDataSet6.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
